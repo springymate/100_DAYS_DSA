@@ -1,12 +1,14 @@
 # 100_DAYS_DSA
 
 DAY 4/100
+#BASIC PROBLEMS ON RECURSIO
 
 TOWER OF HANOI
 
 import java.io.*;
 import java.util.*;
- public class Recursion2 {
+public class Recursion2 
+{
 
     public static void towerOfHanoi(int n,String src,String helper, String dest )
     {
@@ -29,7 +31,7 @@ import java.util.*;
  }
 
 
-$printreverse
+PRINT REVERSE OF STRING
 
 import java.io.*;
 import java.util.*;
@@ -49,12 +51,14 @@ import java.util.*;
     printRev(str,str.lenght()-1);
     }
  } 
+ 
+ 
+FIRST OCCURANCE PROBLEM
 
-first occurance programm
 import java.io.*;
 import java.util.*;
  public class Recursion3 {
-     public static int first=-1;
+     public static int first= -1;
      public static int last = -1;
      public static void findOccurance(String str , int idx,char element)
      { if(idx == str.length()){
