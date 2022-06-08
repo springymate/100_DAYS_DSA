@@ -85,3 +85,67 @@ import java.util.*;
     findOccurance(str,0,'b');
     }
  } 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ DAY 05/100
+
+Check if array is sorted using recursion
+
+public class IsSortedUsingRecursion {
+
+ public static boolean isSorted(int [] a, int start){
+ if(start==a.length–1)
+ return true;
+ if(a[start]<=a[start+1])
+ return isSorted(a, start+1);
+ else
+ return false;
+ }
+ public static void main(String[] args) {
+ int [] a = { 1,2,3,4,8,8,22,50};
+ System.out.println(isSorted(a,0));
+ }
+}
+
+
+Move all occurrence of letter ‘x’ from the string s to the end using Recursion
+
+import java.util.*;
+class Check{
+
+
+static void moveAtEnd(String s, int i, int l)
+{
+	if (i >= l)
+		return;
+
+	// Store current character
+	char curr = s.charAt(i);
+
+	// Check if current character is not 'x'
+	if (curr != 'x')
+		System.out.print(curr);
+
+	// recursive function call
+	moveAtEnd(s, i + 1, l);
+
+	// Check if current character is 'x'
+	if (curr == 'x')
+		System.out.print(curr);
+
+	return;
+}
+
+public static void main(String args[])
+{
+	String s = "twttwtxxxrxxgfdsxx";
+
+	int l = s.length();
+
+	moveAtEnd(s, 0, l);
+}
+}
+
+
+
+
